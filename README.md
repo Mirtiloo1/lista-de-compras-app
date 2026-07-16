@@ -79,7 +79,7 @@ https://github.com/Mirtiloo1/listinha-api
 
 Baixe a versão mais recente do aplicativo:
 
-**APK:** *ainda sem*
+**APK:** *https://github.com/Mirtiloo1/lista-de-compras-app/releases/tag/v1.0.0*
 
 ## Telas
 
