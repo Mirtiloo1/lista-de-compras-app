@@ -89,6 +89,22 @@ Baixe a versão mais recente do aplicativo:
 - Itens da lista
 - Perfil
 
+- ## Screenshots
+- 
+### Início
+![Início](assets/readme/login.png)
+
+### Index
+![Index](assets/readme/index.png)
+
+### Adicionando Item
+![Início](assets/readme/modaladd.png)
+
+### Itens da Lista
+![Início](assets/readme/itens.png)
+
+### Listas
+
 ## Licença
 
 Este projeto foi desenvolvido para fins de estudo.
