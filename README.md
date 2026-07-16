@@ -81,6 +81,8 @@ Baixe a versão mais recente do aplicativo:
 
 **APK:** *https://github.com/Mirtiloo1/lista-de-compras-app/releases/tag/v1.0.0*
 
+## (Pode levar um tempo para conseguir de cadastrar ou logar na primeira vez devido á demanda do backend que está hospedado no Render)
+
 ## Telas
 
 - Login
