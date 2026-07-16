@@ -1,56 +1,98 @@
-# Welcome to your Expo app 👋
+# Lista de Compras App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile para gerenciamento de listas de compras. Desenvolvido em React Native com Expo, consumindo uma API REST para autenticação e sincronização dos dados.
 
-## Get started
+## Tecnologias
 
-1. Install dependencies
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- React Navigation
+- Axios
+- Zustand
+- Expo Secure Store
+- React Native Reanimated
 
-   ```bash
-   npm install
-   ```
+## Funcionalidades
 
-2. Start the app
+- Cadastro e login de usuários
+- Autenticação com JWT
+- Criação e exclusão de listas de compras
+- Adição e remoção de itens
+- Marcação de itens como pegos
+- Cálculo automático do valor total da lista
+- Persistência segura da sessão do usuário
+- Interface responsiva para Android e iOS
 
-   ```bash
-   npx expo start
-   ```
+## Rodando o projeto
 
-In the output, you'll find options to open the app in a
+**Pré-requisitos:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js
+- npm
+- Expo Go ou Android Studio
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Clone o repositório:
 
 ```bash
-npm run reset-project
+git clone https://github.com/Mirtiloo1/lista-de-compras-app.git
+cd lista-de-compras-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Instale as dependências:
 
-### Other setup steps
+```bash
+npm install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Inicie o aplicativo:
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Depois basta abrir pelo Expo Go ou executar em um emulador Android/iOS.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> **Observação:** O aplicativo já está configurado para consumir a API hospedada no Render.
 
-## Join the community
+## Estrutura do projeto
 
-Join our community of developers creating universal apps.
+```text
+src/
+├── app/            # Rotas e telas do Expo Router
+├── components/     # Componentes reutilizáveis
+├── services/       # Comunicação com a API
+├── store/          # Gerenciamento do estado global de autenticação
+├── constants/      # Constantes da aplicação
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Backend
+
+A API utilizada pelo aplicativo está hospedada no Render e utiliza PostgreSQL hospedado no Supabase.
+
+Repositório da API:
+
+https://github.com/Mirtiloo1/listinha-api
+
+## Download
+
+Baixe a versão mais recente do aplicativo:
+
+**APK:** *ainda sem*
+
+## Telas
+
+- Login
+- Cadastro
+- Listas de compras
+- Itens da lista
+- Perfil
+
+## Licença
+
+Este projeto foi desenvolvido para fins de estudo.
+
+---
+
+Desenvolvido por [@mirtiloo1](https://github.com/Mirtiloo1)
