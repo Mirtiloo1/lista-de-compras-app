@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import * as SecureStore from 'expo-secure-store' 
 import { logar as loginService, nomeUsuario} from '../services/auth'
 import { setApiToken, clearApiToken } from '../services/api'
 
@@ -20,18 +20,22 @@ export const useAuth = create<AuthState>((set) => ({
 
   login: async (email, senha) => {
     const token = await loginService(email, senha)
-    await setApiToken(token)
+    // O setApiToken já salva no SecureStore com a chave 'token'
+    await setApiToken(token) 
     const usuario = await nomeUsuario()
     set({ token, usuario })
   },
 
   logout: async () => {
-    await clearApiToken()
+    // O clearApiToken já deleta do SecureStore
+    await clearApiToken() 
     set({ token: null, usuario: null })
   },
 
   checkAuth: async () => {
-    const token = await AsyncStorage.getItem('@token')
+    // 2. Buscamos do lugar certo e com a chave certa!
+    const token = await SecureStore.getItemAsync('token') 
+    
     if(token){
       await setApiToken(token)
 

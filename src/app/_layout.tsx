@@ -26,14 +26,14 @@ export default function RootLayout() {
 
     if (!fontsLoaded) return
 
+    SplashScreen.hideAsync()
+    
     if (token) {
       router.replace('/(app)/listas')
     } else {
       router.replace('/(auth)/bemVindo')
     }
   }, [token, loading, fontsLoaded])
-
-  SplashScreen.hideAsync()
 
   if (!fontsLoaded) {
     return (

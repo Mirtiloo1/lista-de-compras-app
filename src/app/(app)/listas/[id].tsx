@@ -1,5 +1,5 @@
 import { useFocusEffect, useLocalSearchParams } from 'expo-router'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { View, Text, FlatList, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native'
 import { criarItem, deletarItem, editarItem, getItens, marcarPego } from '@/services/itens'
 import { colors } from '@/constants/colors'
